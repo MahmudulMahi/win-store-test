@@ -46,7 +46,7 @@ export default function Navber() {
           </div>
           {/* Right */}
           <div className="flex items-center gap-4 text-sm ">
-            <div className="hidden md:block text-right">
+            <div className="hidden md:block ">
               <p className="text-xs">Call Us Now</p>
               <p className="font-semibold">+011 5827918</p>
               <p className="text-xs">Sign In</p>
