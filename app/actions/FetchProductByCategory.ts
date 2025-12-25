@@ -9,7 +9,7 @@ export interface Product {
   image: string;
   price: number;
   oldPrice?: number;
-  category: string;
+  category?: string;
 }
 
 export async function getBestDeals(category: string): Promise<Product[]> {
