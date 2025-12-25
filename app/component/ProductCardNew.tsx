@@ -25,7 +25,7 @@ export default function ProductCardNew({ product }: { product: Product }) {
 
         
           <span className="text-xs text-gray-400 line-through">
-            RS 20
+            RS 20.00
           </span>
        
         <span className="text-sm font-semibold text-sky-500">

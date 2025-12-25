@@ -14,6 +14,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Navber() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,8 +26,18 @@ export default function Navber() {
         <div className="max-w-7xl mx-auto px-4 py-2 flex  items-center justify-between gap-3 ">
           <div className="flex gap-10">
             {/* Left */}
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <img src="/logo/logo.png" alt="Win Store" className="h-10" />
+            </div> */}
+            <div className="flex items-center gap-4">
+              <Image
+                src="/logo/logo.png"
+                alt="Win Store"
+                width={120}
+                height={40}
+                className="h-10 w-auto"
+                priority
+              />
             </div>
 
             {/* Search */}

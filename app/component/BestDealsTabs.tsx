@@ -1,8 +1,5 @@
 "use client";
-
 import { useEffect, useState } from "react";
-// import { Product, getBestDeals } from "@/app/actions/getBestDeals";
-import ProductCard from "./ProductCard";
 import { getBestDeals, Product } from "../actions/FetchProductByCategory";
 import ProductCardNew from "./ProductCardNew";
 
@@ -33,17 +30,17 @@ export default function BestDealsTabs() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
       {/* Header */}
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex flex-col md:flex-row items-center justify-between mb-6">
         <h2 className="text-xl font-semibold text-sky-500">
           Best <span className="text-black">Deals</span>
         </h2>
 
-        <div className="flex gap-6 text-sm">
+        <div className="flex gap-6 text-sm flex-wrap mt-10 md:mt-0" >
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`pb-2 border-b-2 transition ${
+              className={`pb-2 border-b-2 transition font-bold ${
                 activeTab === tab
                   ? "border-sky-500 text-sky-500"
                   : "border-transparent text-gray-500 hover:text-sky-500"

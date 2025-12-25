@@ -15,11 +15,11 @@ export default function HeroSlider() {
         pagination={{ clickable: true }}
         // autoplay={{ delay: 4000 }}
         // loop
-        className="max-w-[1400px] mx-auto"
+        className="max-w-[1400px] mx-auto h-[340px] md:h-full"
       >
         {/* Slide */}
         <SwiperSlide>
-          <div className="flex flex-col md:flex-row items-center px-6 md:px-14  gap-8 bg-[url('/slider/hero-bg.png')] bg-cover  bg-center bg-no-repeat">
+          <div className="flex flex-col md:flex-row items-center px-6 md:px-14  gap-8 bg-[url('/slider/hero-bg.png')] bg-cover  bg-center bg-no-repeat h-full">
             {/* Left Content */}
             <div className="flex-1 text-center md:text-left py-5">
               <h1 className="text-3xl md:text-5xl font-light text-gray-900">
