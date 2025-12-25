@@ -83,7 +83,7 @@ export default function HeroSlider() {
               </button>
             </div>
 
-            {/* Right Images */}
+            
             <div className="flex-1 relative lg:flex justify-center items-center hidden ">
               {/* Discount Badge */}
               <div className="absolute bottom-5 right-28 bg-orange-400 text-white w-28 h-28 rounded-full flex flex-col items-center justify-center text-xl font-semibold">
@@ -95,7 +95,7 @@ export default function HeroSlider() {
           </div>
         </SwiperSlide>
 
-        {/* Pagination Customization */}
+        
         <style jsx>{`
           :global(.swiper-pagination-bullet) {
             width: 40px !important;
