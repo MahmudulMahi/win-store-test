@@ -11,10 +11,12 @@ export interface Product {
   oldPrice?: number;
 }
 
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 export async function getNewArrivals(): Promise<Product[]> {
   try {
     const response = await axios.get(
-      "https://mm-assesment-server.vercel.app/api/v1/products",
+      `${BASE_URL}/products`,
       {
         headers: {
           "Cache-Control": "no-store",

@@ -9,10 +9,12 @@ export interface Category {
   slug: string;
 }
 
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 export async function getCategories(): Promise<Category[]> {
   try {
     const response = await axios.get(
-      "https://mm-assesment-server.vercel.app/api/v1/products/categories",
+      `${BASE_URL}/products/categories`,
 
     );
     

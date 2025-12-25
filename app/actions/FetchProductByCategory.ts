@@ -12,11 +12,13 @@ export interface Product {
   category?: string;
 }
 
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 export async function getBestDeals(category: string): Promise<Product[]> {
   try {
     // https://your-api.com/best-deals?category=${category}
     const response = await axios.get(
-      `https://mm-assesment-server.vercel.app/api/v1/products/category/${category}`,
+      `${BASE_URL}/products/category/${category}`,
       {
         params: { category },
         headers: {
